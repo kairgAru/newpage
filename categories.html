@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Base -->
+    <title>Категории</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet"
+    />
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="./index.html" class="header__logo">
+            <img src="./img/logo.svg" alt="Логотип" />
+        </a>
+
+        <nav class="header__nav">
+            <ol class="header__nav-list">
+                <li>
+                    <a
+                        href="./index.html"
+                        class="header__nav-link header__nav-link--active"
+                        aria-current="page"
+                    >
+                        Новости
+                    </a>
+                </li>
+                <li>
+                    <a href="./categories.html" class="header__nav-link">
+                        Категории
+                    </a>
+                </li>
+            </ol>
+        </nav>
+
+        <div class="header__auth">
+            <a href="./login.html" class="button button--blue">Войти</a>
+        </div>
+    </header>
+    <main class="container">
+    <h1>Категории</h1>
+
+    <div class="categories">
+        <div class="category">
+            <span class="name">Спорт</span>
+            <div class="news-card__actions">
+                <a
+                        href="./edit2.html"
+                        class="button button--blue button--small"
+                    >
+                        Редактировать
+                </a>
+                <button
+                        type="button"
+                        class="button button--red button--small"
+                        onclick="deleteCategories(1)"
+                    >
+                        Удалить
+                </button>
+            </div>
+        </div>
+
+        <!-- <div class="category">
+            <span>Кино</span>
+            <div class="actions">
+                <button class="edit">Редактировать</button>
+                <button class="delete">Удалить</button>
+            </div>
+        </div>
+
+        <div class="category">
+            <span>Политика</span>
+            <div class="actions">
+                <button class="edit">Редактировать</button>
+                <button class="delete">Удалить</button>
+            </div>
+        </div>
+
+        <div class="category">
+            <span>Мода</span>
+            <div class="actions">
+                <a href="edit2.html" class="button button--blue button--small" >Редактировать</a>
+                <button class="delete">Удалить</button>
+            </div>
+        </div>
+
+        <div class="category">
+            <span>Жизнь</span>
+            <div class="actions">
+                <button class="edit">Редактировать</button>
+                <button class="delete">Удалить</button>
+            </div>
+        </div>
+    </div> -->
+</main>
+
+
+<!-- <a href="create2.html" class="add-btn">+</a> -->
+
+
+    <script  src="js/categories.js"></script>
+</body>
+</html>
+

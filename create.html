@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Base -->
+    <title>Новости</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/create.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet"
+    />
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="./index.html" class="header__logo">
+            <img src="./img/logo.svg" alt="Логотип" />
+        </a>
+
+        <nav class="header__nav">
+            <ol class="header__nav-list">
+                <li>
+                    <a
+                        href="./index.html"
+                        class="header__nav-link header__nav-link--active"
+                        aria-current="page"
+                    >
+                        Новости
+                    </a>
+                </li>
+                <li>
+                    <a href="./categories.html" class="header__nav-link">
+                        Категории
+                    </a>
+                </li>
+            </ol>
+        </nav>
+
+        <div class="header__auth">
+            <a href="./login.html" class="button button--blue">Войти</a>
+        </div>
+    </header>
+
+    <main>
+        <form class="container">
+            <h2 class="add-news">Создание новости</h2>
+            <div class="box">
+                <p class="news-name">Название</р>
+                <input
+                    class="name-input"
+                    type="text"
+                    placeholder="Введите название"
+                >
+            </div>
+            <div class="box">
+                <p class="news-category">Категория</р>
+                <select class="category-input" name="category" id="category">
+                    <option value="1">test category</option>
+                    <option value="2">sport</option>
+                    
+                </select>
+            </div>
+            <div class="box">
+                <p class="news-cover">Обложка</р>
+                <input
+                    class="cover-input"
+                    type="file"
+                >
+            </div>
+            <div class="box">
+                <p class="news-content">Контент</p>
+                <textarea
+                class="content-input"
+                cols="50"
+                rows="8"
+                ></textarea>
+            </div>
+            <button class="button button--blue">Добавить новость</button>
+        </form>
+    </main>
+    <script  src="./js/create.js"></script>
+</body>
+</html>
+
