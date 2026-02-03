@@ -1,9 +1,16 @@
+ main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 24px;
+}
+
 .news-grid {
 display: grid;
 grid-template-columns: 50% 50%;
 margin-inline: 56px;
 margin-block: 48px;
 }
+
 .news-card {
 display: grid;
 grid-template-columns: 200px 1fr;
@@ -48,19 +55,27 @@ color: #707070;
 }
 
 .news-card__author {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%
+    margin-top: 8px;
+    margin-bottom: 10px;
 
 
 }
 .news-card__actions {
 display: flex;
-justify-content: flex-end;
-gap: 12px;
-margin-top: 8px;
 
-}
+gap: 8px;
+margin-top: auto;
+
+} 
+
+
+
+
+
+
+
+
+
 
 /* категории */
 .container {
